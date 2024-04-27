@@ -8,7 +8,7 @@ class player:
         self.y = 800 - height
         self.width = width
         self.height = height
-        self.side_vel = 5
+        self.side_vel = 0
         self.jump_vel = 40
         self.in_air = False
         self.direction = 'R'
@@ -55,8 +55,18 @@ class player:
             self.jump_step = pygame.transform.flip(self.jump_step, True, False)
         self.last_update = self.time_passed
         return main.WIN.blit(self.jump_step, (self.x, self.y))
+    # walking fucntion
+    def walk_func(self):
+        if (self.direction == "R" and self.x + self.side_vel + self.width <= main.WIDTH):
+            self.side_vel += .0625 + .25*self.side_vel
+            self.x += self.side_vel
+        elif (self.direction == "L" and self.x - self.side_vel >= 0):
+            self.side_vel += .0625 + .125*self.side_vel
+            self.x -= self.side_vel
+        if self.side_vel > 7:
+            self.side_vel = 7
     # walikng animations
-    def walk(self, x, y, width, height, distance, scale):
+    def walk_anime(self, x, y, width, height, distance, scale):
         self.width = width * scale
         self.height = height * scale
         self.time_passed += 1
