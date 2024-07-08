@@ -58,13 +58,13 @@ class player:
     # walking fucntion
     def walk_func(self):
         if (self.direction == "R" and self.x + self.side_vel + self.width <= main.WIDTH):
-            self.side_vel += .0625 + .25*self.side_vel
             self.x += self.side_vel
+            self.side_vel += .001953125*self.side_vel**2 + .125
         elif (self.direction == "L" and self.x - self.side_vel >= 0):
-            self.side_vel += .0625 + .125*self.side_vel
             self.x -= self.side_vel
-        if self.side_vel > 7:
-            self.side_vel = 7
+            self.side_vel += .001953125*self.side_vel**2 + .125
+        if self.side_vel > 8:
+            self.side_vel = 8
     # walikng animations
     def walk_anime(self, x, y, width, height, distance, scale):
         self.width = width * scale

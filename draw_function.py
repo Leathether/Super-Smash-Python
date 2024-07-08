@@ -14,7 +14,7 @@ def draw(time_passed, keys, player1, player2):
     if player1.in_air == False:
         # this is to avoid the side animation playing aswell
         if ((not keys[pygame.K_a] and not keys[pygame.K_d]) or (keys[pygame.K_a] and keys[pygame.K_d])) and player1.atking == False:
-            player1.side_vel = 0
+            player1.side_vel = 1
             player1.idle(2, 41, 23, 34, 25, 3)
     else:
         # player1.jump(x, y, width, height, scale)
@@ -46,7 +46,7 @@ def draw(time_passed, keys, player1, player2):
     #first sees if the player is in the air to do animation
     if player2.in_air == False:
         if (not keys[pygame.K_LEFT] and not keys[pygame.K_RIGHT]) or (keys[pygame.K_RIGHT] and keys[pygame.K_LEFT]):
-            player2.side_vel = 0
+            player2.side_vel = 1
             player2.idle(9, 37, 16, 38, 20, 3)
     else:
         # player2.jump(x, y, width, height, scale)

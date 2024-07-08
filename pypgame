@@ -1,0 +1,27 @@
+2024-07-08T05:03:31,120 Using pip 24.0 from C:\Users\Pwmag\AppData\Roaming\Python\Python312\site-packages\pip (python 3.12)
+2024-07-08T05:03:31,148 Defaulting to user installation because normal site-packages is not writeable
+2024-07-08T05:03:31,244 Created temporary directory: C:\Users\Pwmag\AppData\Local\Temp\pip-build-tracker-e911cbo3
+2024-07-08T05:03:31,244 Initialized build tracking at C:\Users\Pwmag\AppData\Local\Temp\pip-build-tracker-e911cbo3
+2024-07-08T05:03:31,244 Created build tracker: C:\Users\Pwmag\AppData\Local\Temp\pip-build-tracker-e911cbo3
+2024-07-08T05:03:31,245 Entered build tracker: C:\Users\Pwmag\AppData\Local\Temp\pip-build-tracker-e911cbo3
+2024-07-08T05:03:31,245 Created temporary directory: C:\Users\Pwmag\AppData\Local\Temp\pip-install-1g3_3joq
+2024-07-08T05:03:31,245 ERROR: You must give at least one requirement to install (see "pip help install")
+2024-07-08T05:03:31,246 Exception information:
+2024-07-08T05:03:31,246 Traceback (most recent call last):
+2024-07-08T05:03:31,246   File "C:\Users\Pwmag\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-07-08T05:03:31,246     status = run_func(*args)
+2024-07-08T05:03:31,246              ^^^^^^^^^^^^^^^
+2024-07-08T05:03:31,246   File "C:\Users\Pwmag\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-07-08T05:03:31,246     return func(self, options, args)
+2024-07-08T05:03:31,246            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-07-08T05:03:31,246   File "C:\Users\Pwmag\AppData\Roaming\Python\Python312\site-packages\pip\_internal\commands\install.py", line 342, in run
+2024-07-08T05:03:31,246     reqs = self.get_requirements(args, options, finder, session)
+2024-07-08T05:03:31,246            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-07-08T05:03:31,246   File "C:\Users\Pwmag\AppData\Roaming\Python\Python312\site-packages\pip\_internal\cli\req_command.py", line 461, in get_requirements
+2024-07-08T05:03:31,246     raise CommandError
+2024-07-08T05:03:31,246 pip._internal.exceptions.CommandError: You must give at least one requirement to install (see "pip help install")
+2024-07-08T05:03:31,305 Remote version of pip: 24.1.2
+2024-07-08T05:03:31,305 Local version of pip:  24.0
+2024-07-08T05:03:31,327 Was pip installed by pip? True
+2024-07-08T05:03:31,328 WARNING: UpgradePrompt(old='24.0', new='24.1.2')
+2024-07-08T05:03:31,330 Removed build tracker: 'C:\\Users\\Pwmag\\AppData\\Local\\Temp\\pip-build-tracker-e911cbo3'
