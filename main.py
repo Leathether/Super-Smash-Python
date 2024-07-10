@@ -2,7 +2,7 @@ import pygame
 import player_class
 import draw_function
 
-WIDTH, HEIGHT = 1000, 800
+WIDTH, HEIGHT = 1000, 700
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Super Smash Python")
 

@@ -80,7 +80,7 @@ def draw(time_passed, keys, player1, player2):
     if keys[pygame.K_f]:
         if player1.in_air == False:
             # player1.grd_atk(x, y, width, height, distance, scale)
-            player1.grd_atk(8, 540, 40, 80, 40, 3)
+            player1.grd_atk(8, 537, 39, 150, 40, 3)
 
     if keys[pygame.K_SLASH]:
         pass

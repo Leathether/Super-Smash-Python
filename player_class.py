@@ -5,7 +5,7 @@ import main
 class player:
     def __init__(self, x, width, height, sprites):
         self.x = x
-        self.y = 800 - height
+        self.y = main.HEIGHT - height
         self.width = width
         self.height = height
         self.side_vel = 0
@@ -87,6 +87,7 @@ class player:
         self.frame = 0
         self.width = width * scale
         self.height = height * scale
+        self.y = main.HEIGHT - height
         self.time_passed += 1
         self.grd_atk_step = pygame.Surface((width, height))
         self.grd_atk_step.blit(self.sprites, (0, 0), (x + self.frame * distance, y, width, height))
